@@ -24,7 +24,7 @@ pipeline {
         }
         stage('Container creation') {
             steps {
-                sh 'docker run -it -d --name=container_new2 kunalsh/kunal:latest /bin/bash'
+                sh 'docker run -it -d --name=container_new3 kunalsh/kunal:latest /bin/bash'
             }
         }
           }}
