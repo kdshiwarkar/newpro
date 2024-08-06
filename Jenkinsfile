@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh '/home/kunalshiwarkar/Documents/Devops_software/tar/apache-maven-3.9.7/bin/mvn install'
+                sh 'mvn install'
             }
         }
         stage('Deployment') {
@@ -24,7 +24,7 @@ pipeline {
         }
         stage('Container creation') {
             steps {
-                sh 'docker run -it -d --name=container_new1 kunalsh/kunal:latest /bin/bash'
+                sh 'docker run -it -d --name=container_new2 kunalsh/kunal:latest /bin/bash'
             }
         }
           }}
